@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.brand h1{
+    color: rgb(206, 106, 106);
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: ease-in-out 0.5s;
+ }
+
+ .brand h1 span{
+    color: rgb(88,39,18);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-weight: 500;
+    position: relative;
+    background-color: transparent;
+    top: 0px;
+    z-index: 2;
+    align-items: center;
+    width: 100%;
+}
+
+.brand:hover{
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.nav-wrapper{
+    list-style: none;
+    display: flex;
+}
+
+.nav-wrapper li a{
+    text-decoration: none;
+    color:rgb(88,39,18);
+    transition: color 0.5s;
+    font-weight: 900;
+    padding: 0 20px;
+    position: relative;
+    text-transform: uppercase;
+    transition: ease-in-out 0.5s;
+}
+
+.nav-wrapper li a:hover{
+    color: rgb(226, 205, 205);
+}
+
+/* check list */
+#check{display: none;}
+.open, .close{
+    position: absolute;
+    color: rgb(88,39,18);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close{
+    top: 20px;
+    right:20px;
+}
+
+/* End of nav bar */
+
+
+/* Home section begins */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:rgb(88,39,18);
+    color:#fff;
+    cursor: pointer;
+    font-size: 17px;
+    transition: ease-in-out 0.5s;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background:#111;
+    letter-spacing: 1px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    position: absolute;
+    justify-items: center;
+    margin-left: 180px;
+    padding: 100px 0px;
+}
+
+
+
+.home .image img{
+    width: 100%;
+    margin-top: -250px;
+    margin-left: 220px;
+    align-items: right;
+    position: absolute;
+}
+
+
+
+.home .content .hi{
+    font-size: 20px;
+    font-family: 'Clash Display', sans-serif;
+    color:rgb(88,39,18);
+    padding: 30px 0;
+}
+
+.home .content h3{
+    font-size: 45px;
+    font-family: 'Clash Display', sans-serif;
+    color:rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    color:RGB(88,39,18);
+    font-family: 'Clash Display', sans-serif;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.home .content .info{
+    font-size: 25px;
+    font-family: 'Clash Display', sans-serif;
+    color:#111;
+    padding:.5rem 0;
+}
+
+.home .content .text{
+    font-size: 17px;
+    color:black;
+    padding:.5rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*  Mobile view - screens smaller than 768px */
+
+  @media (max-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .nav-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #29323c;
+        opacity: 80%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-wrapper li{margin-top: 40px;}
+    .nav-wrapper li a{
+        padding: 10px;
+        color: white;
+    }
+    .open, .close{display: block}
+    #check:checked ~ .nav-wrapper{right: 0;}
+
+    .home{
+        align-items: center;
+        max-width: 100%;
+        position: absolute;
+        justify-items: center;
+        margin-left: 50px;
+        padding: 60px 0px;
+    }
+    
+    .home .image img{
+        width: 80%;
+        margin-top: 150px;
+        margin-left: -350px;
+        position: absolute;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .btn{
+        align-self: center;
+        position: relative;
+        margin-left: 100px;
+    }
+
+    .home .content h3{
+        font-size: 30px;
+    }
+
+    .home .content h3 span{
+        font-size: 30px;
+    }
+  
+    .home .content .info{
+        font-size: 17px;
+    }
+
+    .home .content .text{
+        font-size: 17px;
+    }
+
+  }
