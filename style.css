@@ -334,7 +334,7 @@ nav{
     .home .image img{
         width: 80%;
         margin-top: 150px;
-        margin-left: -300px;
+        margin-left: -350px;
         position: absolute;
         align-items: center;
         justify-items: center;
@@ -343,7 +343,7 @@ nav{
     .btn{
         align-self: center;
         position: relative;
-        margin-left: 90px;
+        margin-left: 80px;
     }
 
     .home .content h3{
@@ -363,3 +363,16 @@ nav{
     }
 
   }
+
+  /* service begin */
+#service {
+    margin-top: 700px;
+    width: 100%;
+    height: fit-content;
+}
+
+.service-items h3 {
+    display: inline;
+    font-size: 15px;
+}
+    
