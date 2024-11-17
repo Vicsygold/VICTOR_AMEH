@@ -334,7 +334,7 @@ nav{
     .home .image img{
         width: 80%;
         margin-top: 150px;
-        margin-left: -350px;
+        margin-left: -300px;
         position: absolute;
         align-items: center;
         justify-items: center;
@@ -362,17 +362,19 @@ nav{
         font-size: 17px;
     }
 
+        /* service begin */
+    #service {
+        margin-top: 700px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .service-items h3 {
+        display: inline;
+        font-size: 15px;
+    }
+
   }
 
-  /* service begin */
-#service {
-    margin-top: 700px;
-    width: 100%;
-    height: fit-content;
-}
 
-.service-items h3 {
-    display: inline;
-    font-size: 15px;
-}
     
