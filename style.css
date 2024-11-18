@@ -592,7 +592,7 @@ nav{
     }
 
     .service-items h3 {
-        display: inline;
+        /* display: inline; */
         font-size: 7px;
     }
 
