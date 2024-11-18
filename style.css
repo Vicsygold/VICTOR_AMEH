@@ -259,7 +259,7 @@ nav{
 
 .service-items h3:hover{
     color: rgb(88,39,18);
-    letter-spacing: .07rem;
+    letter-spacing: .7rem;
 }
 
 .service-items p {
@@ -274,7 +274,68 @@ nav{
 /* service end */
 
 
+#portfolio {
+    margin-top: 100px;
+    width: 100%;
+    height: fit-content;
+}
 
+#portfolio .portfolio-top {
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 5vh;
+    color: rgb(88,39,18);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#portfolio .portfolio-top:hover {
+    letter-spacing: .2rem;
+}
+
+
+.portfolio-top h2 span{
+    color: grey;
+    text-transform: uppercase;
+
+}
+
+
+.portfolio-top h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+
+#portfolio h3{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 10px; /* Adjust the gap between items as needed */
+    padding: 20px; /* Add padding around the gallery */
+    padding-right: 50px;
+}
+
+/* Style individual gallery items */
+.gallery-item {
+    border: 1px solid #ccc; /* Add a border to each item */
+    padding: 10px; /* Add spacing within each item */
+}
+
+/* Style the images */
+.gallery-item img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto;
+}
 
 
 
@@ -364,7 +425,7 @@ nav{
 
         /* service begin */
     #service {
-        margin-top: 700px;
+        margin-top: 750px;
         width: 100%;
         height: fit-content;
     }
@@ -373,6 +434,13 @@ nav{
         display: inline;
         font-size: 13px;
     }
+
+    #portfolio {
+        margin-top: 75px;
+        width: 100%;
+        height: fit-content;
+    }
+
 
   }
 
