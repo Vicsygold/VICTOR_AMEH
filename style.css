@@ -339,6 +339,97 @@ nav{
 
 
 
+/* Contact begins */
+#contact {
+    margin-top: 1px;
+    width: 100%;
+    height: fit-content;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ccc;
+}
+contact-section, .contact-info h1 {
+    font-size: 60px;
+    margin-bottom: 24px; /* Add space after the h2 element */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+contact-section, .contact-info p {
+    font-size: 16px;
+    margin-bottom: 24px; /* Add space after each paragraph */
+    font-weight: bold;
+}
+
+.contact-info p i {
+    margin-right: 8px; /* Add space between icons and text */
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form h2, .contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form  .tweet-button{
+    background-color: rgb(8, 158, 251);
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+}
+
+.contact-form button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+}
+
+.contact-form label {
+    font-size: 20px; /* Increase font size to 16px */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
 
 
 
