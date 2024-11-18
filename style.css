@@ -340,6 +340,7 @@ nav{
 
 
 /* Contact begins */
+/* General Styles for Contact Section */
 #contact {
     margin-top: 1px;
     width: 100%;
@@ -348,29 +349,31 @@ nav{
     margin-bottom: 40px;
 }
 
-
 .contact-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
     background-color: #ccc;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    gap: 20px; /* Add spacing between items */
 }
-contact-section, .contact-info h1 {
+
+.contact-info h1 {
     font-size: 60px;
-    margin-bottom: 24px; /* Add space after the h2 element */
+    margin-bottom: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-contact-section, .contact-info p {
+.contact-info p {
     font-size: 16px;
-    margin-bottom: 24px; /* Add space after each paragraph */
+    margin-bottom: 16px;
     font-weight: bold;
 }
 
 .contact-info p i {
-    margin-right: 8px; /* Add space between icons and text */
-    color: rgb(88,39,18);
+    margin-right: 8px;
+    color: rgb(88, 39, 18);
 }
 
 .contact-info, .contact-form {
@@ -380,10 +383,6 @@ contact-section, .contact-info p {
     border-radius: 5px;
 }
 
-.contact-form h2, .contact-info h2 {
-    margin-top: 0;
-}
-
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -391,6 +390,9 @@ contact-section, .contact-info p {
 
 .contact-form label {
     margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
 .contact-form input, .contact-form textarea {
@@ -400,34 +402,101 @@ contact-section, .contact-info p {
     border-radius: 5px;
 }
 
-.contact-form  .tweet-button{
+.contact-form .tweet-button {
     background-color: rgb(8, 158, 251);
     color: white;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 10px 16px;
     border-radius: 18px;
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
-    margin-left: 8px;
     transition: box-shadow 0.15s;
 }
 
-.contact-form button:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+.contact-form .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-.contact-form label {
-    font-size: 20px; /* Increase font size to 16px */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 5px;
-    font-weight: bold;
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    
 }
 
 
+/* General Footer Styling */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: -40px;
+  }
+  
+  .footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer ul li a:hover {
+    color: #f0a500;
+  }
+  
+  .social-links li a i {
+    margin-right: 8px;
+  }
+  
+  /* Layout Styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .text-center {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .text-center p {
+    font-size: 14px;
+  }
+  
+
+  
 
 
 
@@ -534,6 +603,52 @@ contact-section, .contact-info p {
     }
 
 
+/* Contact begins */
+    .contact-section {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .contact-info, .contact-form {
+        width: 100%; /* Take full width on small screens */
+        padding: 15px; /* Reduce padding for better fit */
+        border: none; /* Remove border for a cleaner look */
+    }
+
+    .contact-info h1 {
+        font-size: 40px; /* Reduce font size */
+        text-align: center; /* Center align text */
+    }
+
+    .contact-info p {
+        font-size: 14px; /* Reduce paragraph font size */
+        text-align: center; /* Center align text */
+    }
+
+    .contact-form label {
+        font-size: 18px; /* Adjust label size */
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%; /* Make inputs full width */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .contact-form .tweet-button {
+        font-size: 14px; /* Reduce button size */
+        padding: 8px 12px; /* Adjust padding */
+    }
+
+/* Contact end */
+
+
+    /* footer */
+    .row {
+        flex-direction: column;
+      }
+      .column {
+        margin: 10px 0;
+      }
   }
 
 
