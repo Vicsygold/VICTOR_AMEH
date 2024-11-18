@@ -418,10 +418,7 @@ nav{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    
-}
+
 
 
 /* General Footer Styling */
@@ -591,9 +588,8 @@ nav{
         height: fit-content;
     }
 
-    .service-items h3 {
-        display: inline;
-        font-size: 7px;
+    #service .service-items h3 {
+        font-size: 20px;
     }
 
 
