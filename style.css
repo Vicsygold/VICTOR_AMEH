@@ -370,6 +370,7 @@ contact-section, .contact-info p {
 
 .contact-info p i {
     margin-right: 8px; /* Add space between icons and text */
+    color: rgb(88,39,18);
 }
 
 .contact-info, .contact-form {
