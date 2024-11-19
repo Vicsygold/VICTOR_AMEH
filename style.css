@@ -100,6 +100,7 @@ nav{
 
 .home{
     display: flex;
+    flex-direction: column;
     align-items: center;
     max-width: 100%;
     position: absolute;
@@ -112,8 +113,8 @@ nav{
 
 .home .image img{
     width: 100%;
-    margin-top: -250px;
-    margin-left: 220px;
+    margin-top: -400px;
+    margin-left: 430px;
     align-items: right;
     position: absolute;
 }
@@ -552,8 +553,8 @@ nav{
     
     .home .image img{
         width: 80%;
-        margin-top: 150px;
-        margin-left: -300px;
+        margin-top: 30px;
+        margin-left: -155px;
         position: absolute;
         align-items: center;
         justify-items: center;
@@ -562,7 +563,7 @@ nav{
     .btn{
         align-self: center;
         position: relative;
-        margin-left: 80px;
+        margin-left: 100px;
     }
 
     .home .content h3{
