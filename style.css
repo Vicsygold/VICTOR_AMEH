@@ -454,11 +454,11 @@ nav{
   .footer ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: ease-in-out 0.5s;
   }
   
   .footer ul li a:hover {
-    color: #f0a500;
+    color: rgb(88,39,18)
   }
   
   .social-links li a i {
